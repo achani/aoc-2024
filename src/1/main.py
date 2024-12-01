@@ -12,7 +12,6 @@ def solve_part1():
     print(f"Part 1: {sum}")
       
 
-
 def solve_part2():
   list2_counts = defaultdict(int)
   ans = 0
@@ -22,7 +21,7 @@ def solve_part2():
       ans += i * list2_counts[i]
   print(f"Part 2: {ans}")
 
-lines = None
+
 list1 = []
 list2 = []
 with open("input.txt", "r") as f:
