@@ -15,11 +15,6 @@ def is_safe(r):
   return  count_unsafe_changes == 0 and count_no_changes == 0 and (count_positive_changes == len(changes) or count_positive_changes == 0)
 
 
-def solve_part1():
-  safe_count = len(list(filter(lambda r: is_safe(r),reports)))
-  print(f"Part 1: {safe_count}")
-
-
 with open("input.txt", "r") as f:
   lines = f.read().splitlines()
   reports = [[int(i) for i in line.split()] for line in lines]
